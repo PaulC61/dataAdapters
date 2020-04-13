@@ -25,9 +25,9 @@ public class MainActivity extends AppCompatActivity {
         names [9] = "Felipe";
 
         ArrayAdapter<String> studentNamesAdapter =
-                new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, names);
+                new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, names);
 
-        ListView studentListView = (ListView) findViewById(R.id.studentList);
+        ListView studentListView = findViewById(R.id.studentList);
         studentListView.setAdapter(studentNamesAdapter);
 
     }
